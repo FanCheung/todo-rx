@@ -1,0 +1,11 @@
+<button (click)="addParentCount()"> add parent Count</button>
+<button (click)="add()"> add Count from parent</button>
+<button (click)="addCountObject()">add count object</button>
+<button (click)="hideChild=true">hidechild</button>
+
+
+<br><br>
+parent count Object: {{counterObj.count}}
+parent count: {{parentCount}}
+<br><br>
+<my-counter  *ngIf="!hideChild" [counterObj]="counterObj" [num]="counter"></my-counter>
